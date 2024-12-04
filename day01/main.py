@@ -18,14 +18,14 @@ firstnums.sort()
 secondnums.sort()
 
 
-def day1():
+def p1():
     differences = 0
     for i in range(len(firstnums)):
         differences += abs(firstnums[i] - secondnums[i])
     print(differences)
 
 
-def day2():
+def p2():
     occurances = defaultdict(int)
     for num in secondnums:
         occurances[num] = occurances[num] + 1
@@ -36,5 +36,5 @@ def day2():
     print(score)
 
 
-day1()
-day2()
+p1()
+p2()
